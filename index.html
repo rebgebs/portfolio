@@ -59,7 +59,11 @@
     <footer>
         <p>Last Updated: <span id='dateLastModified'></span></p>
     </footer>
-    <script src='js/datelastmodified.js'></script>
+    <!-- <script src='js/datelastmodified.js'></script> -->
+    <script>document.getElementById('dateLastModified').textContent = (document.lastModified);
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 
